@@ -7,8 +7,7 @@ export const USERS: User[] = [
     email: 'peterParker89@yahoo.com',
     password: {pwd: '12345678', confirmPwd: '12345678'},
     gender: 'Male',
-    phone: '021-025-88',
-    terms: true
+    phone: '021-025-88'
   },
   {
     id: 2,
@@ -16,8 +15,7 @@ export const USERS: User[] = [
     email: 'bruceWayne@gmail.com',
     password: {pwd: '2358748lhgjf', confirmPwd: '2358748lhgjf'},
     gender: 'Male',
-    phone: '102-547-25',
-    terms: true
+    phone: '102-547-25'
   },
   {
     id: 3,
@@ -25,8 +23,7 @@ export const USERS: User[] = [
     email: 'juliaClark12@yahoo.com',
     password: {pwd: 'gfdgotM58hkk', confirmPwd: 'gfdgotM58hkk'},
     gender: 'Female',
-    phone: '087-002-87',
-    terms: true
+    phone: '087-002-87'
   },
   {
     id: 4,
@@ -34,8 +31,7 @@ export const USERS: User[] = [
     email: 'dannyCraig@yahoo.fr',
     password: {pwd: '878587OIT', confirmPwd: '878587OIT'},
     gender: 'Male',
-    phone: '871-555-33',
-    terms: true
+    phone: '871-555-33'
   },
   {
     id: 5,
@@ -43,7 +39,6 @@ export const USERS: User[] = [
     email: 'sarahAnderson74@gmail.com',
     password: {pwd: 'kjhgd54725L', confirmPwd: 'kjhgd54725L'},
     gender: 'Female',
-    phone: '987-257-71',
-    terms: true
+    phone: '987-257-71'
   },
 ];

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {USERS} from "../mock-users";
 
 @Component({
   selector: 'app-users',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
+  users = USERS;
+  showForm: boolean;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

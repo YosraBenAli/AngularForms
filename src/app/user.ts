@@ -8,5 +8,4 @@ export class User {
   };
   gender: string;
   phone: string;
-  terms: boolean;
 }
