@@ -14,7 +14,10 @@
                 <input class="form-control"
                        type="text"
                        id="inputName"
-                       placeholder="Name">
+                       placeholder="Name"
+                       ngModel
+                       #name
+                       name="name">
               </div>
             </div>
             <div class="col-sm-4">
@@ -24,7 +27,9 @@
                 <input class="form-control"
                        type="text"
                        id="inputEmail"
-                       placeholder="Email">
+                       placeholder="Email"
+                       [ngModel]="newUser.email"
+                       name="email">
               </div>
             </div>
             <div class="col-sm-4">
@@ -34,7 +39,9 @@
                 <input class="form-control"
                        type="text"
                        id="inputPhone"
-                       placeholder="Phone Number">
+                       placeholder="Phone Number"
+                       [ngModel]="newUser.phone"
+                       name="phone">
               </div>
             </div>
           </div>
@@ -42,11 +49,14 @@
             <div class="col-sm-4">
               <!--- Select gender Block --->
               <div class="form-group">
-                <label for="select">Gender</label>
-                <select class="form-control" id="select">
-                  <option>Male</option>
-                  <option>Female</option>
-                  <option>Other</option>
+                <label for="selectGender">Gender</label>
+                <select class="form-control"
+                        id="selectGender"
+                        [ngModel]="newUser.gender"
+                        name="gender">
+                  <option *ngFor="let g of gender"
+                          [value]="g"> {{g}}
+                  </option>
                 </select>
               </div>
             </div>
@@ -57,7 +67,9 @@
                 <input class="form-control"
                        type="password"
                        id="inputPassword"
-                       placeholder="Password">
+                       placeholder="Password"
+                       [ngModel]="newUser.password.pwd"
+                       name="pwd">
               </div>
             </div>
             <div class="col-sm-4">
@@ -66,7 +78,9 @@
                 <input class="form-control"
                        type="password"
                        id="confirmPassword"
-                       placeholder="Password">
+                       placeholder="Password"
+                       [ngModel]="newUser.password.confirmPwd"
+                       name="confirmPwd">
               </div>
             </div>
           </div>
@@ -85,6 +99,7 @@
             </div>
           </div>
         </form>
+        newUser : {{newUser | json}} {{name.value}}
       </div>
     </div>
   </div>
